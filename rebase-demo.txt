@@ -1,0 +1,2 @@
+This file demonstrates Git rebase.
+Feature work is maintained on a separate branch.
