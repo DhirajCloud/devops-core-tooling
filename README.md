@@ -1,24 +1,57 @@
 # DevOps Core Tooling
 
-A foundational project for learning Git, GitHub,
-version control, and professional DevOps practices.
+[![Python CI](https://img.shields.io/github/actions/workflow/status/DhirajCloud/devops-core-tooling/ci.yml?branch=main&label=build)](https://github.com/DhirajCloud/devops-core-tooling/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 
-## Project Overview
+A foundational Python project demonstrating professional Git workflows, modular application structure, automated testing, code quality checks, and GitHub Actions CI.
 
-This repository demonstrates Git repository management,
-branching strategies, collaboration, and CI/CD workflows.
+## Table of Contents
 
-## Technologies
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Technology Stack](#technology-stack)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing and Code Quality](#testing-and-code-quality)
+- [CI Workflow](#ci-workflow)
+- [Project Structure](#project-structure)
+- [Security Notes](#security-notes)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [License](#license)
 
-- Git
-- GitHub
-- Python
-- GitHub Actions
+## Overview
 
-## Getting Started
+DevOps Core Tooling is a learning and demonstration repository for core software engineering and DevOps practices.
 
-Clone the repository and follow the project instructions.
+The project includes:
+- A Python application entry point.
+- Dashboard summary and display utilities.
+- Demonstration authentication and logging modules.
+- Central application configuration.
+- Automated unit tests using Pytest.
+- Code quality checks using Flake8.
+- GitHub Actions automation for continuous integration.
 
-## License
+## Architecture
 
-MIT License
+The application uses a simple modular structure. GitHub Actions validates code changes through linting and automated tests.
+
+### System Architecture Diagram
+
+```mermaid
+flowchart TD
+    A[Developer] --> B[Git Repository]
+    B --> C[GitHub]
+    C --> D[GitHub Actions]
+    D --> E[Install Dependencies]
+    E --> F[Flake8 Code Quality]
+    F --> G[Pytest Unit Tests]
+    G --> H[CI Result]
+    B --> I[Python Application]
+    I --> J[Dashboard]
+    I --> K[Authentication Demo]
+    I --> L[Logger]
+    I --> M[Configuration]
