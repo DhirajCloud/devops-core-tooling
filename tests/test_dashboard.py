@@ -9,3 +9,12 @@ def test_dashboard_summary():
     assert "authentication" in summary["modules"]
     assert "logging" in summary["modules"]
     assert summary["status"] == "active"
+
+
+def test_dashboard_data_validation():
+    summary = get_dashboard_summary()
+
+    assert isinstance(summary["modules"], list)
+    assert len(summary["modules"]) > 0
+    assert isinstance(summary["status"], str)
+    assert summary["status"].strip() != ""
