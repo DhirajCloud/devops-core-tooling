@@ -1,0 +1,17 @@
+
+# Environment and sensitive configuration
+.env
+secrets.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Python build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node.js dependencies and build outputs
+node_modules/
+dist/
